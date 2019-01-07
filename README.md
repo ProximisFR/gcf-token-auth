@@ -22,7 +22,9 @@ import (
 )
 
 func F(w http.ResponseWriter, r *http.Request) {
-    gcftokenauth.Auth(w, r)
+    if !gcftokenauth.Auth(w, r) {
+        return
+    }
     [...]
 }
 ```
