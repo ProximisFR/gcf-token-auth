@@ -12,7 +12,7 @@ Call your function with token header :
 curl https://ZONE-PROJECT.cloudfunctions.net/YOURFUNCTION -H "X-Proximis-Api-Key=YOURMARVELLOUSTOKEN"
 ```
 
-If token is different from "X_PROXIMIS_API_KEY" environment variable it will launch http error and Golang panic func.
+If token is different from "X_PROXIMIS_API_KEY" environment variable it will launch http error and return false.
 
 ```golang
 package p
