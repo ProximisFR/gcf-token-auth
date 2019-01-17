@@ -1,7 +1,6 @@
 package gcftokenauth
 
 import (
-	"fmt"
 	"net/http"
 	"os"
 )
