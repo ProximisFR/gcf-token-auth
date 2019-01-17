@@ -16,7 +16,6 @@ func Auth(w http.ResponseWriter, r *http.Request) bool {
 
 	APIKey := r.Header.Get("X-Proximis-Api-Key")
 
-	fmt.Print(APIKey)
 	if APIKey == "" || APIKey != fAPIKey {
 		http.Error(w, "Missing or wrong api key header", http.StatusUnauthorized)
 		return false
